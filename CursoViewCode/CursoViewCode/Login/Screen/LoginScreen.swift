@@ -18,9 +18,21 @@ class LoginScreen: UIView {
         
     }()
     
+    lazy var logoAppImageView:UIImageView = {
+        let image = UIImageView()
+        image.translatesAutoresizingMaskIntoConstraints = false
+        image.image = UIImage(named: "logo")
+        image.contentMode = .scaleAspectFit
+        
+        
+        return image
+        
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.addSubview(self.loginLabel)
+        self.addSubview(self.logoAppImageView)
         self.setUpConstraits()
     }
     
@@ -32,8 +44,17 @@ class LoginScreen: UIView {
     private func setUpConstraits () {
         NSLayoutConstraint.activate([
         
-            self.loginLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            self.loginLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor)
+            self.loginLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor,
+                     constant: 20),
+            self.loginLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
+            self.logoAppImageView.topAnchor.constraint(equalTo: self.loginLabel.bottomAnchor,
+                    constant: 20),
+            self.logoAppImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor,
+                    constant: 60),
+            self.logoAppImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor,
+                    constant: -60),
+            self.logoAppImageView.heightAnchor.constraint(equalToConstant: 200)
+            
         
         
         ])
