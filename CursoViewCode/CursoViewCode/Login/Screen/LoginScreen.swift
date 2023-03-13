@@ -92,7 +92,7 @@ class LoginScreen: UIView {
     }
     
     private func configBackGround(){
-        self.backgroundColor = UIColor(red: 24/255, green: 120/255, blue: 104/255, alpha: 1.0)
+        self.backgroundColor = UIColor(red: 24/255, green: 115/255, blue: 104/255, alpha: 1.0)
         
     }
     
