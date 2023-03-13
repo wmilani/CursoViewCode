@@ -19,6 +19,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.loginScreen?.delegate(delegate: self)
         self.loginScreen?.configTextFieldDelegate(delegate: self)
 
         self.view.backgroundColor = UIColor(red: 70/255, green: 130/255, blue: 180, alpha: 1.0)
@@ -32,10 +33,22 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController:LoginScreenProtocol{
+    func actionLoginButton() {
+        print("Botao de Login Funcionando")
+    }
+    
+    func actionRegisterButton() {
+        print("Botao de Registro Funcionando")
+    }
+    
+    
+}
+
 extension ViewController:UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder() 
+        textField.resignFirstResponder()
     }
     
     
