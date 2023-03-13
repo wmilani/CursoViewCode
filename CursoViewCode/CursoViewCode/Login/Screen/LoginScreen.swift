@@ -106,6 +106,11 @@ class LoginScreen: UIView {
         self.addSubview(self.registerButton)
     }
     
+    public func configTextFieldDelegate(delegate:UITextFieldDelegate) {
+        self.emailTextField.delegate = delegate
+        self.passwordTextField.delegate = delegate
+    }
+    
     
     required init(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

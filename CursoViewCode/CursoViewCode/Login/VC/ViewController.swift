@@ -19,6 +19,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.loginScreen?.configTextFieldDelegate(delegate: self)
 
         self.view.backgroundColor = UIColor(red: 70/255, green: 130/255, blue: 180, alpha: 1.0)
         
@@ -31,3 +32,11 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController:UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder() 
+    }
+    
+    
+}
