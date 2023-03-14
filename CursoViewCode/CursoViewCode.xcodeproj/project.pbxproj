@@ -12,6 +12,7 @@
 		EA3BF62929AAD4E8002BD84E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3BF62829AAD4E8002BD84E /* LoginVC.swift */; };
 		EA3BF62E29AAD4E9002BD84E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA3BF62D29AAD4E9002BD84E /* Assets.xcassets */; };
 		EA41FA5429BFF56C00353B49 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA41FA5329BFF56C00353B49 /* RegisterVC.swift */; };
+		EA41FA5629BFFD6400353B49 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA41FA5529BFFD6400353B49 /* RegisterScreen.swift */; };
 		EA9521D729AAF6FE003A8B14 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9521D629AAF6FE003A8B14 /* LoginScreen.swift */; };
 		EAFF466329AC334800B2821E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFF466229AC334800B2821E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 		EA3BF62D29AAD4E9002BD84E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA3BF63229AAD4E9002BD84E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA41FA5329BFF56C00353B49 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		EA41FA5529BFFD6400353B49 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		EA9521D629AAF6FE003A8B14 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		EAFF466229AC334800B2821E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +91,7 @@
 		EA41FA5029BFF4EB00353B49 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				EA41FA5529BFFD6400353B49 /* RegisterScreen.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA41FA5629BFFD6400353B49 /* RegisterScreen.swift in Sources */,
 				EA3BF62929AAD4E8002BD84E /* LoginVC.swift in Sources */,
 				EA9521D729AAF6FE003A8B14 /* LoginScreen.swift in Sources */,
 				EA3BF62529AAD4E8002BD84E /* AppDelegate.swift in Sources */,
