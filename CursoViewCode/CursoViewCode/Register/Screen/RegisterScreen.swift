@@ -7,13 +7,28 @@
 
 import UIKit
 
+
+protocol RegisterScreenProtocol: AnyObject {
+    func actionBackButton()
+    func actionRegisterButton()
+}
+
 class RegisterScreen: UIView {
     
-    var backButton: UIButton = {
+    
+    weak private var delegate:RegisterScreenProtocol?
+    func delegate (delegate:RegisterScreenProtocol) {
+        self.delegate = delegate
+        
+    }
+    
+    lazy var backButton: UIButton = {
         let button = UIButton()
         
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(UIImage(named: "seta voltar"), for: .normal)
+        button.addTarget(self, action: #selector(self.tappedBackButton), for: .touchUpInside)
+
         
         return button
     }()
@@ -65,6 +80,7 @@ class RegisterScreen: UIView {
         button.clipsToBounds = true
         button.layer.cornerRadius = 7.5
         button.backgroundColor = UIColor(red: 211/255, green: 211/255, blue: 211/255, alpha: 3.0)
+        button.addTarget(self, action: #selector(self.tappedRegisterButton), for: .touchUpInside)
         
         return button
     }()
@@ -89,6 +105,20 @@ class RegisterScreen: UIView {
         self.backgroundColor = UIColor (red: 24/255, green: 115/255, blue: 255/255, alpha: 1.0)
         
     }
+    
+    public func configTextFieldDelegate (delegate:UITextFieldDelegate){
+        self.emailTextField.delegate = delegate
+        self.passwordTextField.delegate = delegate
+    }
+    
+    @objc private func tappedBackButton(){
+        self.delegate?.actionBackButton()
+    }
+    
+    @objc private func tappedRegisterButton(){
+        self.delegate?.actionRegisterButton()
+    }
+    
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

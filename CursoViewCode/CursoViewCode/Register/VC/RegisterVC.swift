@@ -20,7 +20,27 @@ class RegisterVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.registerScreen?.configTextFieldDelegate(delegate: self)
+        self.registerScreen?.delegate(delegate: self)
     }
+}
 
+extension RegisterVC: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}
+
+extension RegisterVC:RegisterScreenProtocol {
+    
+    func actionBackButton() {
+        print("Botao de voltar")
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    func actionRegisterButton() {
+        print("Botao de registrar")
+    }
 }
