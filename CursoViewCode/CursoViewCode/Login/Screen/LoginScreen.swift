@@ -78,10 +78,10 @@ class LoginScreen: UIView {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Logar", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
-        button.setTitleColor(.white, for: .normal)
+        button.setTitleColor(.black, for: .normal)
         button.clipsToBounds = true
         button.layer.cornerRadius = 7.5
-        button.backgroundColor  = UIColor(red: 15/255, green: 58/255, blue: 51/255, alpha: 1.0)
+        button.backgroundColor  = UIColor(red: 211/255, green: 211/255, blue: 211/255, alpha: 3.0)
         button.addTarget(self, action: #selector(self.tappedLoginButton), for: .touchUpInside)
        
         

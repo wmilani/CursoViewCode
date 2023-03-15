@@ -27,16 +27,62 @@ class RegisterScreen: UIView {
 
         return image
     }()
+    
+    lazy var emailTextField: UITextField = {
+        let tf = UITextField()
+        tf.translatesAutoresizingMaskIntoConstraints = false
+        tf.autocorrectionType = .no
+        tf.backgroundColor = .white
+        tf.borderStyle = .roundedRect
+        tf.keyboardType = .emailAddress
+        tf.placeholder = "Digite seu e-mail"
+        tf.font = UIFont.systemFont(ofSize: 14)
+        tf.textColor = .darkGray
+        
+        return tf
+    }()
+    
+    lazy var passwordTextField: UITextField = {
+        let tf = UITextField()
+        tf.translatesAutoresizingMaskIntoConstraints = false
+        tf.autocorrectionType = .no
+        tf.backgroundColor = .white
+        tf.borderStyle = .roundedRect
+        tf.keyboardType = .default
+        tf.isSecureTextEntry = true
+        tf.placeholder = "Digite sua senha"
+        tf.font = UIFont.systemFont(ofSize: 14)
+        tf.textColor = .darkGray
+        
+        return tf
+    }()
+    
+    lazy var registerButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Cadastrar", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.clipsToBounds = true
+        button.layer.cornerRadius = 7.5
+        button.backgroundColor = UIColor(red: 211/255, green: 211/255, blue: 211/255, alpha: 3.0)
+        
+        return button
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.configBackGround()
         self.configSuperView()
         self.setUpConstraints()
+        
     }
     
     private func configSuperView (){
         self.addSubview(self.backButton)
         self.addSubview(self.imageAddUser)
+        self.addSubview(self.emailTextField)
+        self.addSubview(self.passwordTextField)
+        self.addSubview(self.registerButton)
     }
     
     private func configBackGround(){
@@ -62,7 +108,36 @@ class RegisterScreen: UIView {
             self.backButton.topAnchor.constraint(equalTo:
                     self.imageAddUser.topAnchor),
             self.backButton.leadingAnchor.constraint(equalTo:
-                    self.leadingAnchor, constant: 20)
+                    self.leadingAnchor, constant: 20),
+            
+            
+            self.emailTextField.topAnchor.constraint(equalTo:
+                    self.imageAddUser.bottomAnchor, constant: 10),
+            self.emailTextField.leadingAnchor.constraint(equalTo:
+                    self.leadingAnchor, constant: 20),
+            self.emailTextField.trailingAnchor.constraint(equalTo:
+                    self.trailingAnchor, constant: -20),
+            self.emailTextField.heightAnchor.constraint(equalToConstant: 45),
+            
+            
+            self.passwordTextField.topAnchor.constraint(equalTo:
+                    self.emailTextField.bottomAnchor, constant: 15),
+            self.passwordTextField.leadingAnchor.constraint(equalTo:
+                    self.emailTextField.leadingAnchor),
+            self.passwordTextField.trailingAnchor.constraint(equalTo:
+                    self.emailTextField.trailingAnchor),
+            self.passwordTextField.heightAnchor.constraint(equalTo:
+                    self.emailTextField.heightAnchor),
+            
+            
+            self.registerButton.topAnchor.constraint(equalTo:
+                    self.passwordTextField.bottomAnchor,constant: 15),
+            self.registerButton.leadingAnchor.constraint(equalTo:
+                    self.emailTextField.leadingAnchor),
+            self.registerButton.trailingAnchor.constraint(equalTo:
+                    self.emailTextField.trailingAnchor),
+            self.registerButton.heightAnchor.constraint(equalTo:
+                    self.emailTextField.heightAnchor),
             
         
         ])
