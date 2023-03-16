@@ -51,7 +51,16 @@ extension LoginVC:UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        
     }
     
+    internal func textFieldDidBeginEditing(_ textField: UITextField) {
+        print("TextFieldDidBeginInEditing")
+    }
+    
+    internal func textFieldDidEndEditing(_ textField: UITextField) {
+        print("TexFieldDidEngInEditing")
+        self.loginScreen?.validaTextFields()
+    }
     
 }
