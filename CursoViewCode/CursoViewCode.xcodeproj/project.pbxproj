@@ -14,6 +14,7 @@
 		EA3BF62E29AAD4E9002BD84E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA3BF62D29AAD4E9002BD84E /* Assets.xcassets */; };
 		EA41FA5429BFF56C00353B49 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA41FA5329BFF56C00353B49 /* RegisterVC.swift */; };
 		EA41FA5629BFFD6400353B49 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA41FA5529BFFD6400353B49 /* RegisterScreen.swift */; };
+		EA6BABB229CB811F00EB74D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA6BABB129CB811F00EB74D9 /* GoogleService-Info.plist */; };
 		EA9521D729AAF6FE003A8B14 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9521D629AAF6FE003A8B14 /* LoginScreen.swift */; };
 		EAFF466329AC334800B2821E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFF466229AC334800B2821E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		EA3BF63229AAD4E9002BD84E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA41FA5329BFF56C00353B49 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		EA41FA5529BFFD6400353B49 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
+		EA6BABB129CB811F00EB74D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EA9521D629AAF6FE003A8B14 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		EAFF466229AC334800B2821E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +54,6 @@
 				816462AFB228E6A04CF35D74 /* Pods-CursoViewCode.debug.xcconfig */,
 				B186B25CCCD92EE33494731A /* Pods-CursoViewCode.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,6 +84,7 @@
 				EA3BF62629AAD4E8002BD84E /* SceneDelegate.swift */,
 				EA3BF62D29AAD4E9002BD84E /* Assets.xcassets */,
 				EA3BF63229AAD4E9002BD84E /* Info.plist */,
+				EA6BABB129CB811F00EB74D9 /* GoogleService-Info.plist */,
 				EAFF466229AC334800B2821E /* LaunchScreen.storyboard */,
 			);
 			path = CursoViewCode;
@@ -208,6 +210,7 @@
 			files = (
 				EAFF466329AC334800B2821E /* LaunchScreen.storyboard in Resources */,
 				EA3BF62E29AAD4E9002BD84E /* Assets.xcassets in Resources */,
+				EA6BABB229CB811F00EB74D9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
