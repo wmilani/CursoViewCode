@@ -52,10 +52,9 @@ extension RegisterVC:RegisterScreenProtocol {
     
     func actionRegisterButton() {
         
-        let email:String = self.registerScreen?.emailTextField.text ?? " "
-        let password:String = self.registerScreen?.passwordTextField.text ?? " "
+        guard let register = self.registerScreen else {return}
         
-        self.auth?.createUser(withEmail: email, password:password, completion: { (result, error) in
+        self.auth?.createUser(withEmail: register.getEmail() , password:register.getPassword(), completion: { (result, error) in
             
             if error != nil {
                 print("Erro ao cadastrar")

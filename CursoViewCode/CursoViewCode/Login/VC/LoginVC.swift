@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginVC: UIViewController {
+    
+    var auth: Auth?
     
     var loginScreen: LoginScreen?
     
@@ -21,6 +24,8 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
         self.loginScreen?.delegate(delegate: self)
         self.loginScreen?.configTextFieldDelegate(delegate: self)
+        self.auth  = Auth.auth()
+        
 
         self.view.backgroundColor = UIColor(red: 70/255, green: 130/255, blue: 180, alpha: 1.0)
         
@@ -34,19 +39,37 @@ class LoginVC: UIViewController {
 }
 
 extension LoginVC:LoginScreenProtocol{
-    func actionLoginButton() {
-        print("Botao de Login Funcionando")
-    }
-    
     func actionRegisterButton() {
-        print("Botao de Registro Funcionando")
+        
         let vc:RegisterVC = RegisterVC()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     
-}
-
+    func actionLoginButton() {
+        
+        guard let login = self.loginScreen else {return}
+            
+            self.auth?.signIn(withEmail: login.getEmail(), password: login.getPassword(), completion: { (usuario,  error)  in
+                
+                if error !=  nil {
+                    print("Atencao dados incorretos, verifique e tente novamente")
+                } else {
+                
+                    if  usuario  == nil {
+                        print("tivemos um problema inesperado, tente novamente mais tarde.")
+                    } else {
+                        print("parabens, usuario logado com sucesso")
+                    }
+                    
+                }
+            })
+        }
+      
+        
+    }
+    
+    
 extension LoginVC:UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
