@@ -22,9 +22,6 @@ class LoginScreen: UIView {
         self.delegate = delegate
     }
     
-    
-    
-    
     lazy var loginLabel:UILabel = {
         let label  = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -84,7 +81,6 @@ class LoginScreen: UIView {
         button.backgroundColor  = UIColor(red: 211/255, green: 211/255, blue: 211/255, alpha: 3.0)
         button.addTarget(self, action: #selector(self.tappedLoginButton), for: .touchUpInside)
        
-        
         return button
     }()
     
@@ -96,9 +92,7 @@ class LoginScreen: UIView {
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
         button.setTitleColor(.white, for: .normal)
         button.addTarget(self, action: #selector(self.tappedRegisterButton), for: .touchUpInside)
-        
-        
-        
+
         return button
     }()
     

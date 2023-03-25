@@ -7,15 +7,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "34BA4D66-0313-45CC-8308-87B3DA06D63E"
-            shouldBeEnabled = "Yes"
+            uuid = "85FA65AB-D649-4523-B344-1C6F31641C23"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CursoViewCode/Register/VC/RegisterVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "actionRegisterButton()"
             landmarkType = "7">
          </BreakpointContent>
@@ -23,8 +23,8 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "85FA65AB-D649-4523-B344-1C6F31641C23"
-            shouldBeEnabled = "Yes"
+            uuid = "B3230B5B-FC42-4542-9C6D-83915B36FCEF"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CursoViewCode/Register/VC/RegisterVC.swift"

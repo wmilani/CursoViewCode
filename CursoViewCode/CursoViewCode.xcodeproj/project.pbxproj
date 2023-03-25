@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		424B1D0463055DE87F5DAD7F /* Pods_CursoViewCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381E6546BCE1F04DE4A42AE1 /* Pods_CursoViewCode.framework */; };
+		EA235BA829CF5C83001453DA /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA235BA729CF5C83001453DA /* Alert.swift */; };
 		EA3BF62529AAD4E8002BD84E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3BF62429AAD4E8002BD84E /* AppDelegate.swift */; };
 		EA3BF62729AAD4E8002BD84E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3BF62629AAD4E8002BD84E /* SceneDelegate.swift */; };
 		EA3BF62929AAD4E8002BD84E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3BF62829AAD4E8002BD84E /* LoginVC.swift */; };
@@ -23,6 +24,7 @@
 		381E6546BCE1F04DE4A42AE1 /* Pods_CursoViewCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CursoViewCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		816462AFB228E6A04CF35D74 /* Pods-CursoViewCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CursoViewCode.debug.xcconfig"; path = "Target Support Files/Pods-CursoViewCode/Pods-CursoViewCode.debug.xcconfig"; sourceTree = "<group>"; };
 		B186B25CCCD92EE33494731A /* Pods-CursoViewCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CursoViewCode.release.xcconfig"; path = "Target Support Files/Pods-CursoViewCode/Pods-CursoViewCode.release.xcconfig"; sourceTree = "<group>"; };
+		EA235BA729CF5C83001453DA /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		EA3BF62129AAD4E8002BD84E /* CursoViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CursoViewCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA3BF62429AAD4E8002BD84E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA3BF62629AAD4E8002BD84E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		EA235BA629CF5C60001453DA /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				EA235BA729CF5C83001453DA /* Alert.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
 		EA3BF61829AAD4E8002BD84E = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +88,7 @@
 		EA3BF62329AAD4E8002BD84E /* CursoViewCode */ = {
 			isa = PBXGroup;
 			children = (
+				EA235BA629CF5C60001453DA /* Alert */,
 				EA41FA4E29BFF4CF00353B49 /* Register */,
 				EA9521D129AAEF74003A8B14 /* Login */,
 				EA3BF62429AAD4E8002BD84E /* AppDelegate.swift */,
@@ -269,6 +280,7 @@
 				EA3BF62529AAD4E8002BD84E /* AppDelegate.swift in Sources */,
 				EA3BF62729AAD4E8002BD84E /* SceneDelegate.swift in Sources */,
 				EA41FA5429BFF56C00353B49 /* RegisterVC.swift in Sources */,
+				EA235BA829CF5C83001453DA /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

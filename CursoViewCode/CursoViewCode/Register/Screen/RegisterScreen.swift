@@ -29,7 +29,6 @@ class RegisterScreen: UIView {
         button.setImage(UIImage(named: "seta voltar"), for: .normal)
         button.addTarget(self, action: #selector(self.tappedBackButton), for: .touchUpInside)
 
-        
         return button
     }()
 
