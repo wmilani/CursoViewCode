@@ -17,6 +17,8 @@
 		EA41FA5629BFFD6400353B49 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA41FA5529BFFD6400353B49 /* RegisterScreen.swift */; };
 		EA6BABB229CB811F00EB74D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA6BABB129CB811F00EB74D9 /* GoogleService-Info.plist */; };
 		EA9521D729AAF6FE003A8B14 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9521D629AAF6FE003A8B14 /* LoginScreen.swift */; };
+		EAD98BF229D221110056F151 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD98BF129D221110056F151 /* HomeVC.swift */; };
+		EAD98BF429D222080056F151 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD98BF329D222080056F151 /* HomeScreen.swift */; };
 		EAFF466329AC334800B2821E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFF466229AC334800B2821E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		EA41FA5529BFFD6400353B49 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		EA6BABB129CB811F00EB74D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EA9521D629AAF6FE003A8B14 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		EAD98BF129D221110056F151 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		EAD98BF329D222080056F151 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		EAFF466229AC334800B2821E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +92,7 @@
 		EA3BF62329AAD4E8002BD84E /* CursoViewCode */ = {
 			isa = PBXGroup;
 			children = (
+				EAD98BEC29D220C40056F151 /* Home */,
 				EA235BA629CF5C60001453DA /* Alert */,
 				EA41FA4E29BFF4CF00353B49 /* Register */,
 				EA9521D129AAEF74003A8B14 /* Login */,
@@ -147,6 +152,31 @@
 			isa = PBXGroup;
 			children = (
 				EA9521D629AAF6FE003A8B14 /* LoginScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		EAD98BEC29D220C40056F151 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EAD98BEE29D220D70056F151 /* Screen */,
+				EAD98BED29D220D10056F151 /* VC */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EAD98BED29D220D10056F151 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				EAD98BF129D221110056F151 /* HomeVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		EAD98BEE29D220D70056F151 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				EAD98BF329D222080056F151 /* HomeScreen.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -275,9 +305,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA41FA5629BFFD6400353B49 /* RegisterScreen.swift in Sources */,
+				EAD98BF229D221110056F151 /* HomeVC.swift in Sources */,
 				EA3BF62929AAD4E8002BD84E /* LoginVC.swift in Sources */,
 				EA9521D729AAF6FE003A8B14 /* LoginScreen.swift in Sources */,
 				EA3BF62529AAD4E8002BD84E /* AppDelegate.swift in Sources */,
+				EAD98BF429D222080056F151 /* HomeScreen.swift in Sources */,
 				EA3BF62729AAD4E8002BD84E /* SceneDelegate.swift in Sources */,
 				EA41FA5429BFF56C00353B49 /* RegisterVC.swift in Sources */,
 				EA235BA829CF5C83001453DA /* Alert.swift in Sources */,

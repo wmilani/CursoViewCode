@@ -29,7 +29,7 @@ class LoginVC: UIViewController {
         self.alert = Alert(controller: self)
      
         
-        self.view.backgroundColor = UIColor(red: 70/255, green: 130/255, blue: 180, alpha: 1.0)
+//        self.view.backgroundColor = UIColor(red: 70/255, green: 130/255, blue: 180, alpha: 1.0)
         
     }
 
@@ -48,21 +48,27 @@ extension LoginVC:LoginScreenProtocol{
     
     func actionLoginButton() {
         
-        guard let login = self.loginScreen else {return}
-            
-            self.auth?.signIn(withEmail: login.getEmail(), password: login.getPassword(), completion: { (usuario,  error)  in
-                
-                if error !=  nil {
-                    self.alert?.getAlert(titulo: "Atencao", mensagem: "Dados incorretos, verifique e tente novamente")
-                } else {
-                    if  usuario  == nil {
-                        self.alert?.getAlert(titulo: "Atencao",mensagem: "tivemos um problema inesperado, tente novamente mais tarde.")
-                    } else {
-                        self.alert?.getAlert(titulo: "Parabens",mensagem: "Usuário logado com sucesso!")
-                     
-                    }
-                }
-            })
+        let vc:HomeVC = HomeVC()
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+        
+        
+        
+//        guard let login = self.loginScreen else {return}
+//
+//            self.auth?.signIn(withEmail: login.getEmail(), password: login.getPassword(), completion: { (usuario,  error)  in
+//
+//                if error !=  nil {
+//                    self.alert?.getAlert(titulo: "Atencao", mensagem: "Dados incorretos, verifique e tente novamente")
+//                } else {
+//                    if  usuario  == nil {
+//                        self.alert?.getAlert(titulo: "Atencao",mensagem: "tivemos um problema inesperado, tente novamente mais tarde.")
+//                    } else {
+//                        self.alert?.getAlert(titulo: "Parabens",mensagem: "Usuário logado com sucesso!")
+//
+//                    }
+//                }
+//            })
         }
     }
     

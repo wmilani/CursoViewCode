@@ -111,7 +111,7 @@ class RegisterScreen: UIView {
     }
     
     private func configBackGround(){
-        self.backgroundColor = UIColor (red: 24/255, green: 115/255, blue: 255/255, alpha: 1.0)
+        self.backgroundColor = UIColor (red: 119/255, green: 136/255, blue: 153/255, alpha: 1.0)
         
     }
     
@@ -232,7 +232,7 @@ class RegisterScreen: UIView {
     
     func configEmailTextFieldConstraints(){
         self.emailTextField.snp.makeConstraints { make in
-            make.top.equalTo(self.imageAddUser.snp.bottom).offset(10)
+            make.top.equalTo(self.imageAddUser.snp.bottom).offset(50)
             make.leading.equalToSuperview().offset(20)
             make.trailing.equalToSuperview().inset(20)
             make.height.equalTo(45)

@@ -12,8 +12,6 @@ protocol LoginScreenProtocol:class{
     func actionRegisterButton()
 }
 
-
-
 class LoginScreen: UIView {
     
    private weak var delegate:LoginScreenProtocol?
@@ -39,7 +37,6 @@ class LoginScreen: UIView {
         image.contentMode = .scaleAspectFit
         
         return image
-        
     }()
 
     lazy var emailTextField:UITextField = {
@@ -101,7 +98,6 @@ class LoginScreen: UIView {
         super.init(frame: frame)
         self.configBackGround()
         self.configSuperView()
-        
         self.configLoginLabelConstraints()
         self.configLogoAppImageViewConstraints()
         self.configEmailTextFieldConstraints()
@@ -114,11 +110,6 @@ class LoginScreen: UIView {
         self.configButtonEnable(false)
     }
     
-    private func configBackGround(){
-        self.backgroundColor = UIColor(red: 24/255, green: 115/255, blue: 255/255, alpha: 1.0)
-        
-    }
-    
     private func configSuperView(){
         
         self.addSubview(self.loginLabel)
@@ -127,6 +118,11 @@ class LoginScreen: UIView {
         self.addSubview(self.passwordTextField)
         self.addSubview(self.loginButton)
         self.addSubview(self.registerButton)
+    }
+    
+    private func configBackGround(){
+        self.backgroundColor = UIColor (red: 119/255, green: 136/255, blue: 153/255, alpha: 1.0)
+        
     }
     
     public func configTextFieldDelegate(delegate:UITextFieldDelegate) {
