@@ -14,20 +14,27 @@ class HomeScreen: UIView {
         
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.backgroundColor = .white
-        
+        tableView.register(UserDetailTableViewCell.self, forCellReuseIdentifier: UserDetailTableViewCell.identifier)
         
         return tableView
     }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.addSubview(tableView   )
+        self.configBackGround()
+        self.addSubview(tableView)
         self.setUpConstraints()
+ 
     }
     
     public func configTableViewProtocols(delegate:UITableViewDelegate, dataSource:UITableViewDataSource) {
         self.tableView.delegate = delegate
         self.tableView.dataSource = dataSource
+    }
+    
+    private func configBackGround(){
+        self.backgroundColor = UIColor (red: 119/255, green: 136/255, blue: 153/255, alpha: 1.0)
+        
     }
     
 
