@@ -19,6 +19,7 @@
 		EA5C640229D49DAF007F3C62 /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5C640129D49DAF007F3C62 /* DataUser.swift */; };
 		EA6BABB229CB811F00EB74D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA6BABB129CB811F00EB74D9 /* GoogleService-Info.plist */; };
 		EA9521D729AAF6FE003A8B14 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9521D629AAF6FE003A8B14 /* LoginScreen.swift */; };
+		EABA0A7729D6332F002906D8 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABA0A7629D6332F002906D8 /* UserDetailView.swift */; };
 		EAD98BF229D221110056F151 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD98BF129D221110056F151 /* HomeVC.swift */; };
 		EAD98BF429D222080056F151 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD98BF329D222080056F151 /* HomeScreen.swift */; };
 		EAFF466329AC334800B2821E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFF466229AC334800B2821E /* LaunchScreen.storyboard */; };
@@ -41,6 +42,7 @@
 		EA5C640129D49DAF007F3C62 /* DataUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUser.swift; sourceTree = "<group>"; };
 		EA6BABB129CB811F00EB74D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EA9521D629AAF6FE003A8B14 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		EABA0A7629D6332F002906D8 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDetailView.swift; path = CursoViewCode/Home/Model/UserDetailView.swift; sourceTree = SOURCE_ROOT; };
 		EAD98BF129D221110056F151 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		EAD98BF329D222080056F151 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		EAFF466229AC334800B2821E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 		EA5C63FD29D48809007F3C62 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				EABA0A7529D632CC002906D8 /* CustomCell */,
 				EA5C63FE29D4889B007F3C62 /* UserDetailTableViewCell.swift */,
 			);
 			path = Cell;
@@ -174,6 +177,14 @@
 				EA9521D629AAF6FE003A8B14 /* LoginScreen.swift */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		EABA0A7529D632CC002906D8 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				EABA0A7629D6332F002906D8 /* UserDetailView.swift */,
+			);
+			path = CustomCell;
 			sourceTree = "<group>";
 		};
 		EAD98BEC29D220C40056F151 /* Home */ = {
@@ -330,6 +341,7 @@
 				EAD98BF229D221110056F151 /* HomeVC.swift in Sources */,
 				EA3BF62929AAD4E8002BD84E /* LoginVC.swift in Sources */,
 				EA9521D729AAF6FE003A8B14 /* LoginScreen.swift in Sources */,
+				EABA0A7729D6332F002906D8 /* UserDetailView.swift in Sources */,
 				EA5C640229D49DAF007F3C62 /* DataUser.swift in Sources */,
 				EA3BF62529AAD4E8002BD84E /* AppDelegate.swift in Sources */,
 				EA5C63FF29D4889B007F3C62 /* UserDetailTableViewCell.swift in Sources */,
