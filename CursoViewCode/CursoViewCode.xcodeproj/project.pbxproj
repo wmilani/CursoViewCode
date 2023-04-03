@@ -18,6 +18,8 @@
 		EA5C63FF29D4889B007F3C62 /* UserDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5C63FE29D4889B007F3C62 /* UserDetailTableViewCell.swift */; };
 		EA5C640229D49DAF007F3C62 /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5C640129D49DAF007F3C62 /* DataUser.swift */; };
 		EA6BABB229CB811F00EB74D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA6BABB129CB811F00EB74D9 /* GoogleService-Info.plist */; };
+		EA7DC87429DA699C003DA111 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7DC87329DA699C003DA111 /* TableViewCell.swift */; };
+		EA7DC87729DA6CCF003DA111 /* SportTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7DC87629DA6CCF003DA111 /* SportTableViewCellScreen.swift */; };
 		EA9521D729AAF6FE003A8B14 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9521D629AAF6FE003A8B14 /* LoginScreen.swift */; };
 		EABA0A7729D6332F002906D8 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABA0A7629D6332F002906D8 /* UserDetailView.swift */; };
 		EAD98BF229D221110056F151 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD98BF129D221110056F151 /* HomeVC.swift */; };
@@ -41,6 +43,8 @@
 		EA5C63FE29D4889B007F3C62 /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewCell.swift; sourceTree = "<group>"; };
 		EA5C640129D49DAF007F3C62 /* DataUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUser.swift; sourceTree = "<group>"; };
 		EA6BABB129CB811F00EB74D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EA7DC87329DA699C003DA111 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		EA7DC87629DA6CCF003DA111 /* SportTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTableViewCellScreen.swift; sourceTree = "<group>"; };
 		EA9521D629AAF6FE003A8B14 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		EABA0A7629D6332F002906D8 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDetailView.swift; path = CursoViewCode/Home/Model/UserDetailView.swift; sourceTree = SOURCE_ROOT; };
 		EAD98BF129D221110056F151 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -140,8 +144,8 @@
 		EA5C63FD29D48809007F3C62 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				EABA0A7529D632CC002906D8 /* CustomCell */,
-				EA5C63FE29D4889B007F3C62 /* UserDetailTableViewCell.swift */,
+				EA7DC87229DA696F003DA111 /* SportTableViewCell */,
+				EA7DC87029DA68E8003DA111 /* UserDetailTableViewCell */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -152,6 +156,32 @@
 				EA5C640129D49DAF007F3C62 /* DataUser.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EA7DC87029DA68E8003DA111 /* UserDetailTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EA5C63FE29D4889B007F3C62 /* UserDetailTableViewCell.swift */,
+				EABA0A7529D632CC002906D8 /* CustomCell */,
+			);
+			path = UserDetailTableViewCell;
+			sourceTree = "<group>";
+		};
+		EA7DC87229DA696F003DA111 /* SportTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EA7DC87829DA6CD7003DA111 /* CustomView */,
+				EA7DC87329DA699C003DA111 /* TableViewCell.swift */,
+			);
+			path = SportTableViewCell;
+			sourceTree = "<group>";
+		};
+		EA7DC87829DA6CD7003DA111 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				EA7DC87629DA6CCF003DA111 /* SportTableViewCellScreen.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		EA9521D129AAEF74003A8B14 /* Login */ = {
@@ -184,7 +214,8 @@
 			children = (
 				EABA0A7629D6332F002906D8 /* UserDetailView.swift */,
 			);
-			path = CustomCell;
+			name = CustomCell;
+			path = ../CustomCell;
 			sourceTree = "<group>";
 		};
 		EAD98BEC29D220C40056F151 /* Home */ = {
@@ -337,11 +368,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7DC87429DA699C003DA111 /* TableViewCell.swift in Sources */,
 				EA41FA5629BFFD6400353B49 /* RegisterScreen.swift in Sources */,
 				EAD98BF229D221110056F151 /* HomeVC.swift in Sources */,
 				EA3BF62929AAD4E8002BD84E /* LoginVC.swift in Sources */,
 				EA9521D729AAF6FE003A8B14 /* LoginScreen.swift in Sources */,
 				EABA0A7729D6332F002906D8 /* UserDetailView.swift in Sources */,
+				EA7DC87729DA6CCF003DA111 /* SportTableViewCellScreen.swift in Sources */,
 				EA5C640229D49DAF007F3C62 /* DataUser.swift in Sources */,
 				EA3BF62529AAD4E8002BD84E /* AppDelegate.swift in Sources */,
 				EA5C63FF29D4889B007F3C62 /* UserDetailTableViewCell.swift in Sources */,
