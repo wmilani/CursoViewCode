@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		424B1D0463055DE87F5DAD7F /* Pods_CursoViewCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381E6546BCE1F04DE4A42AE1 /* Pods_CursoViewCode.framework */; };
+		EA1A463029DBA66700295440 /* SportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A462F29DBA66700295440 /* SportTableViewCell.swift */; };
 		EA235BA829CF5C83001453DA /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA235BA729CF5C83001453DA /* Alert.swift */; };
 		EA3BF62529AAD4E8002BD84E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3BF62429AAD4E8002BD84E /* AppDelegate.swift */; };
 		EA3BF62729AAD4E8002BD84E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3BF62629AAD4E8002BD84E /* SceneDelegate.swift */; };
@@ -18,7 +19,6 @@
 		EA5C63FF29D4889B007F3C62 /* UserDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5C63FE29D4889B007F3C62 /* UserDetailTableViewCell.swift */; };
 		EA5C640229D49DAF007F3C62 /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5C640129D49DAF007F3C62 /* DataUser.swift */; };
 		EA6BABB229CB811F00EB74D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA6BABB129CB811F00EB74D9 /* GoogleService-Info.plist */; };
-		EA7DC87429DA699C003DA111 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7DC87329DA699C003DA111 /* TableViewCell.swift */; };
 		EA7DC87729DA6CCF003DA111 /* SportTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7DC87629DA6CCF003DA111 /* SportTableViewCellScreen.swift */; };
 		EA9521D729AAF6FE003A8B14 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9521D629AAF6FE003A8B14 /* LoginScreen.swift */; };
 		EABA0A7729D6332F002906D8 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABA0A7629D6332F002906D8 /* UserDetailView.swift */; };
@@ -31,6 +31,7 @@
 		381E6546BCE1F04DE4A42AE1 /* Pods_CursoViewCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CursoViewCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		816462AFB228E6A04CF35D74 /* Pods-CursoViewCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CursoViewCode.debug.xcconfig"; path = "Target Support Files/Pods-CursoViewCode/Pods-CursoViewCode.debug.xcconfig"; sourceTree = "<group>"; };
 		B186B25CCCD92EE33494731A /* Pods-CursoViewCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CursoViewCode.release.xcconfig"; path = "Target Support Files/Pods-CursoViewCode/Pods-CursoViewCode.release.xcconfig"; sourceTree = "<group>"; };
+		EA1A462F29DBA66700295440 /* SportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTableViewCell.swift; sourceTree = "<group>"; };
 		EA235BA729CF5C83001453DA /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		EA3BF62129AAD4E8002BD84E /* CursoViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CursoViewCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA3BF62429AAD4E8002BD84E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +44,6 @@
 		EA5C63FE29D4889B007F3C62 /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewCell.swift; sourceTree = "<group>"; };
 		EA5C640129D49DAF007F3C62 /* DataUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUser.swift; sourceTree = "<group>"; };
 		EA6BABB129CB811F00EB74D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		EA7DC87329DA699C003DA111 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		EA7DC87629DA6CCF003DA111 /* SportTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTableViewCellScreen.swift; sourceTree = "<group>"; };
 		EA9521D629AAF6FE003A8B14 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		EABA0A7629D6332F002906D8 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDetailView.swift; path = CursoViewCode/Home/Model/UserDetailView.swift; sourceTree = SOURCE_ROOT; };
@@ -171,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				EA7DC87829DA6CD7003DA111 /* CustomView */,
-				EA7DC87329DA699C003DA111 /* TableViewCell.swift */,
 			);
 			path = SportTableViewCell;
 			sourceTree = "<group>";
@@ -180,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				EA7DC87629DA6CCF003DA111 /* SportTableViewCellScreen.swift */,
+				EA1A462F29DBA66700295440 /* SportTableViewCell.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -368,7 +368,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA7DC87429DA699C003DA111 /* TableViewCell.swift in Sources */,
 				EA41FA5629BFFD6400353B49 /* RegisterScreen.swift in Sources */,
 				EAD98BF229D221110056F151 /* HomeVC.swift in Sources */,
 				EA3BF62929AAD4E8002BD84E /* LoginVC.swift in Sources */,
@@ -377,6 +376,7 @@
 				EA7DC87729DA6CCF003DA111 /* SportTableViewCellScreen.swift in Sources */,
 				EA5C640229D49DAF007F3C62 /* DataUser.swift in Sources */,
 				EA3BF62529AAD4E8002BD84E /* AppDelegate.swift in Sources */,
+				EA1A463029DBA66700295440 /* SportTableViewCell.swift in Sources */,
 				EA5C63FF29D4889B007F3C62 /* UserDetailTableViewCell.swift in Sources */,
 				EAD98BF429D222080056F151 /* HomeScreen.swift in Sources */,
 				EA3BF62729AAD4E8002BD84E /* SceneDelegate.swift in Sources */,
