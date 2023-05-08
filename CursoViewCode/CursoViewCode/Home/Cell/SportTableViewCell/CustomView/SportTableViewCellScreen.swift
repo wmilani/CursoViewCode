@@ -9,7 +9,7 @@ import UIKit
 
 class SportTableViewCellScreen: UIView {
 
-    var collectionView:UICollectionView = {
+    lazy var collectionView:UICollectionView = {
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout:
             UICollectionViewLayout.init())
         
@@ -17,6 +17,7 @@ class SportTableViewCellScreen: UIView {
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.backgroundColor = .red
         collectionView.delaysContentTouches = false
+        collectionView.register(SportCollectionViewCell.self, forCellWithReuseIdentifier: SportCollectionViewCell.identifier)
         let layout:UICollectionViewFlowLayout = UICollectionViewFlowLayout.init()
         collectionView.setCollectionViewLayout(layout, animated: false)
         
@@ -35,11 +36,15 @@ class SportTableViewCellScreen: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    public func configProtocolsCollectionView(delegate:UICollectionViewDelegate, dataSource: UICollectionViewDataSource) {
+        self.collectionView.delegate = delegate
+        self.collectionView.dataSource = dataSource
+    }
+    
     func addSubview() {
         self.addSubview(collectionView)
         
     }
-    
     
     func configContraintsCollectionView() {
         self.collectionView.snp.makeConstraints { make in
