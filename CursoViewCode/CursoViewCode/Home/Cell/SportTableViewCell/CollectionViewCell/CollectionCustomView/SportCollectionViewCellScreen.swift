@@ -9,19 +9,29 @@ import UIKit
 
 class SportCollectionViewCellScreen: UIView {
     
-    
-    lazy var viewBackGround: UIView = {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .green
+    lazy var imageView:UIImageView = {
+        let image = UIImageView()
+        image.translatesAutoresizingMaskIntoConstraints = false
+        image.contentMode = .scaleAspectFit
         
-        return view
-        
-    }()
+        return image
+    } ()
     
+    
+    lazy var sportName:UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .center
+        label.textColor = .darkGray
+        
+        return label
+    } ()
+    
+
+  
     override init (frame: CGRect) {
         super.init(frame: frame)
-        self.addSubView()
+        self.addSubViewHierarchy()
         self.configConstraints()
     }
     
@@ -29,19 +39,28 @@ class SportCollectionViewCellScreen: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func addSubView(){
-        self.addSubview(self.viewBackGround)
+    func addSubViewHierarchy() {
+        
+        self.addSubview(imageView)
+        self.addSubview(sportName)
+     
+       
         }
     
     
     func configConstraints (){
         NSLayoutConstraint.activate([
             
-            self.viewBackGround.topAnchor.constraint(equalTo: self.topAnchor),
-            self.viewBackGround.leftAnchor.constraint(equalTo: self.leftAnchor),
-            self.viewBackGround.rightAnchor.constraint(equalTo:self.rightAnchor),
-            self.viewBackGround.bottomAnchor.constraint(equalTo:self.bottomAnchor),
-        
+            self.imageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
+            self .imageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
+            self.imageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
+            self.imageView.bottomAnchor.constraint(equalTo: self.sportName.topAnchor, constant: -10),
+
+            self.sportName.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
+            self.sportName.leadingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
+            self.sportName.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10),
+            self.sportName.heightAnchor.constraint(equalToConstant: 20)
+
         
         ])
         }

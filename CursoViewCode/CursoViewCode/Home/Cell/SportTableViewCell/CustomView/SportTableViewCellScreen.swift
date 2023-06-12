@@ -15,10 +15,12 @@ class SportTableViewCellScreen: UIView {
         
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.showsHorizontalScrollIndicator = false
-        collectionView.backgroundColor = .red
+        collectionView.backgroundColor = .none
         collectionView.delaysContentTouches = false
         collectionView.register(SportCollectionViewCell.self, forCellWithReuseIdentifier: SportCollectionViewCell.identifier)
+        
         let layout:UICollectionViewFlowLayout = UICollectionViewFlowLayout.init()
+        layout.scrollDirection = .horizontal
         collectionView.setCollectionViewLayout(layout, animated: false)
         
         return collectionView

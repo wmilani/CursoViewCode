@@ -19,6 +19,7 @@
 		EA5C63FF29D4889B007F3C62 /* UserDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5C63FE29D4889B007F3C62 /* UserDetailTableViewCell.swift */; };
 		EA5C640229D49DAF007F3C62 /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5C640129D49DAF007F3C62 /* DataUser.swift */; };
 		EA6BABB229CB811F00EB74D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA6BABB129CB811F00EB74D9 /* GoogleService-Info.plist */; };
+		EA7D656E2A378B1300A56FDD /* Sport.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7D656D2A378B1300A56FDD /* Sport.swift */; };
 		EA7DC87729DA6CCF003DA111 /* SportTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7DC87629DA6CCF003DA111 /* SportTableViewCellScreen.swift */; };
 		EA9521D729AAF6FE003A8B14 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9521D629AAF6FE003A8B14 /* LoginScreen.swift */; };
 		EABA0A7729D6332F002906D8 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABA0A7629D6332F002906D8 /* UserDetailView.swift */; };
@@ -46,6 +47,7 @@
 		EA5C63FE29D4889B007F3C62 /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewCell.swift; sourceTree = "<group>"; };
 		EA5C640129D49DAF007F3C62 /* DataUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUser.swift; sourceTree = "<group>"; };
 		EA6BABB129CB811F00EB74D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EA7D656D2A378B1300A56FDD /* Sport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport.swift; sourceTree = "<group>"; };
 		EA7DC87629DA6CCF003DA111 /* SportTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTableViewCellScreen.swift; sourceTree = "<group>"; };
 		EA9521D629AAF6FE003A8B14 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		EABA0A7629D6332F002906D8 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDetailView.swift; path = CursoViewCode/Home/Model/UserDetailView.swift; sourceTree = SOURCE_ROOT; };
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				EA5C640129D49DAF007F3C62 /* DataUser.swift */,
+				EA7D656D2A378B1300A56FDD /* Sport.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				EA3BF62929AAD4E8002BD84E /* LoginVC.swift in Sources */,
 				EAF9FD152A019C1B006EBFE5 /* SportCollectionViewCell.swift in Sources */,
 				EA9521D729AAF6FE003A8B14 /* LoginScreen.swift in Sources */,
+				EA7D656E2A378B1300A56FDD /* Sport.swift in Sources */,
 				EAF9FD172A019C76006EBFE5 /* SportCollectionViewCellScreen.swift in Sources */,
 				EABA0A7729D6332F002906D8 /* UserDetailView.swift in Sources */,
 				EA7DC87729DA6CCF003DA111 /* SportTableViewCellScreen.swift in Sources */,

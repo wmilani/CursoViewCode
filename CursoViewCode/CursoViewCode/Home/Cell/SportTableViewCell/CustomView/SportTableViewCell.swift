@@ -16,6 +16,7 @@ class SportTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super .init(style: style, reuseIdentifier: reuseIdentifier)
         self.addSubview()
+        self.configConstraintsSportTableViewCellScreen()
         self.configConstraints()
         self.sportTableViewCellScreen.configProtocolsCollectionView(delegate: self, dataSource: self)
     }
@@ -31,15 +32,26 @@ class SportTableViewCell: UITableViewCell {
         self.contentView.addSubview(self.sportTableViewCellScreen)
     }
     
-    func configConstraints(){
+    func configConstraintsSportTableViewCellScreen(){
         self.sportTableViewCellScreen.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
+    }
+    
+    func configConstraints () {
+        NSLayoutConstraint.activate([
+            self.sportTableViewCellScreen.topAnchor.constraint(equalTo: self.topAnchor),
+            self.sportTableViewCellScreen.leftAnchor.constraint(equalTo: self.leftAnchor),
+            self.sportTableViewCellScreen.rightAnchor.constraint(equalTo: self.rightAnchor),
+            self.sportTableViewCellScreen.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+    
+        ])
     }
 }
 
 
 extension SportTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
@@ -49,6 +61,7 @@ extension SportTableViewCell: UICollectionViewDelegate, UICollectionViewDataSour
         
         let cell:SportCollectionViewCell? = collectionView.dequeueReusableCell(withReuseIdentifier: SportCollectionViewCell.identifier, for: indexPath) as? SportCollectionViewCell
         
+        cell?.setupCell(data: Sport(name:"Corrida",  nameImage: "corrida"))
         
         return cell ?? UICollectionViewCell()
     }
