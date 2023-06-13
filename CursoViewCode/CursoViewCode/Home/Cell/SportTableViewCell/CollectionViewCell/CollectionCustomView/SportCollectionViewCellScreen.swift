@@ -19,10 +19,10 @@ class SportCollectionViewCellScreen: UIView {
     
     
     lazy var sportName:UILabel = {
-        let label = UILabel()
+        let label = UILabel ()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textAlignment = .center
-        label.textColor = .darkGray
+        label.textAlignment = .right
+        label.textColor = .red
         
         return label
     } ()

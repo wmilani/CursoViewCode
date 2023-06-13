@@ -34,7 +34,7 @@ class SportCollectionViewCell: UICollectionViewCell {
     
      func addSubview() {
          
-         self.sportCollectionViewCellScreen.layer.borderWidth = 6.0
+         self.sportCollectionViewCellScreen.layer.borderWidth = 2.0
          self.sportCollectionViewCellScreen.layer.borderColor = UIColor.blue.cgColor
          
          

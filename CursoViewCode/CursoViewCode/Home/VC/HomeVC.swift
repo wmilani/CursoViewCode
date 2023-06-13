@@ -10,12 +10,18 @@ import UIKit
 class HomeVC: UIViewController {
     
     var homeScreen:HomeScreen?
-    var data: [DataUser] = [DataUser(name: "Weslley", nameImage: "menino1"),
+    var dataUser: [DataUser] = [DataUser(name: "Weslley", nameImage: "menino1"),
                                           DataUser(name: "Felipe", nameImage: "menino2"),
                                           DataUser(name: "Michelle", nameImage: "menina1")
+                                                ]
     
-    
-                        ]
+    var dataSport: [Sport] = [Sport(name: "Corrida", nameImage: "corrida"),
+                                             Sport(name: "Boxe", nameImage: "boxe"),
+                                             Sport(name: "Ciclismo", nameImage: "ciclismo"),
+                                             Sport(name: "Natação", nameImage: "natacao"),
+                                             Sport(name: "Yoga", nameImage: "ioga"),
+     
+                                            ]
     
     override func loadView() {
         self.homeScreen = HomeScreen()
@@ -33,7 +39,7 @@ class HomeVC: UIViewController {
 
 extension HomeVC:UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.data.count + 1
+        return self.dataUser.count + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -41,12 +47,14 @@ extension HomeVC:UITableViewDelegate, UITableViewDataSource {
         if indexPath.row == 3 {
             let cell:SportTableViewCell? = tableView.dequeueReusableCell(withIdentifier: SportTableViewCell.identifier, for: indexPath) as? SportTableViewCell
             
+            cell?.dataCollection(data: self.dataSport)
+                
             return cell ?? UITableViewCell()
         }
         
         
         let cell:UserDetailTableViewCell? = tableView.dequeueReusableCell(withIdentifier: UserDetailTableViewCell.identifier, for: indexPath) as? UserDetailTableViewCell
-        cell?.setUPCell(data: self.data[indexPath.row])
+        cell?.setUPCell(data: self.dataUser[indexPath.row])
         
         return cell ?? UITableViewCell()
     }

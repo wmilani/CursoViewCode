@@ -10,6 +10,7 @@ import UIKit
 class SportTableViewCell: UITableViewCell {
 
     var sportTableViewCellScreen: SportTableViewCellScreen = SportTableViewCellScreen()
+    var data:[Sport] = []
     
     static let identifier: String = "SportTableViewCell"
     
@@ -38,6 +39,11 @@ class SportTableViewCell: UITableViewCell {
         }
     }
     
+    public func dataCollection(data:[Sport]) {
+        self.data = data
+        
+    }
+    
     func configConstraints () {
         NSLayoutConstraint.activate([
             self.sportTableViewCellScreen.topAnchor.constraint(equalTo: self.topAnchor),
@@ -53,7 +59,7 @@ class SportTableViewCell: UITableViewCell {
 extension SportTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return self.data.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -61,7 +67,7 @@ extension SportTableViewCell: UICollectionViewDelegate, UICollectionViewDataSour
         
         let cell:SportCollectionViewCell? = collectionView.dequeueReusableCell(withReuseIdentifier: SportCollectionViewCell.identifier, for: indexPath) as? SportCollectionViewCell
         
-        cell?.setupCell(data: Sport(name:"Corrida",  nameImage: "corrida"))
+        cell?.setupCell(data: self.data[indexPath.row])
         
         return cell ?? UICollectionViewCell()
     }
